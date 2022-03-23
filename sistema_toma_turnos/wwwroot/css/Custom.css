@@ -1,0 +1,13 @@
+﻿#borde {
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: orangered;*/
+    border-top-color: #CC0000;
+    border-right-color: blue;
+    border-bottom-color: #00FF00;
+    border-left-color: #CCC;
+}
+#botones {
+   background-color: #D9D8D6; 
+   border-bottom-color: #ffffff;
+}
