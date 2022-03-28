@@ -5,46 +5,52 @@
 <div class=" row justify-content-center">
     <div class="col-md-8">
         <br />
-    
+
         <div class="card border-warning">
             <div class="card-body">
                 <div class="text-center font-weight-bolder">
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size:x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
                     <br />
-                    <br />                  
+                    <br />
                     <h5 class="font-weight-bolder" style=" font-size: x-large "> Ingrese su número de identidad:</h5>
-                    <div class="row justify-content-center">
-                        <div class="col-6 ">
-                            <input type="text" class="form-control text-center" id="identidad" min="13" maxlength="15" onkeypress="return permite(event, 'num_car')">
+                    <form method="post">
+                        <div class="row justify-content-center">
+                            <div class="col-6 ">
+                                <input type="text" class="form-control text-center" id="identidad" min="13" maxlength="13" onkeypress="return permite(event, 'num')">
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row justify-content-center">
-                        <button type="button" class="btn btn-lg " style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 30px">1</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">2</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">3</button>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">4</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">5</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">6</button>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px ">7</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">8</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">9</button>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px">0</button>
-                        <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 20px"> BORRAR</button>
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <div class="row justify-content-md-center">
-                        <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
-                        <a href="" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button">ACEPTAR</a>
-                    </div>
+                        <br />
+                        <div id="evaluate">
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-lg " style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 30px" value="1">1</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="2">2</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="3">3</button>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="4">4</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="5">5</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="6">6</button>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="7">7</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="8">8</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="9">9</button>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="0">0</button>
+                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 20px"> BORRAR</button>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+
+                        <div class="row justify-content-md-center">
+                            <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
+                            @*<a href="" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button">ACEPTAR</a>*@
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button" asp-controller="Home" asp-action="Categorias">ACEPTAR</button>
+                        </div>
+                    </form>
                     <blockquote class="blockquote mb-0">
                         <img id="image" src="/imagenes/logo.png" alt="Picture" class="float-left" width="100" height="100">
                     </blockquote>
@@ -54,44 +60,3 @@
     </div>
 </div>
 
-@*VALIDACION PARA EL INPUT DE IDENTIDAD*@
-<script>
-    function permite(elEvento, permitidos) {
-        // Variables que definen los caracteres permitidos
-        var numeros = "0123456789";
-        /*var caracteres = " abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";*/
-        var caracteres = "-";
-        var numeros_caracteres = numeros + caracteres;
-        var teclas_especiales = [8, 37, 39, 46];
-
-        switch (permitidos) {
-            case 'num':
-                permitidos = numeros;
-                break;
-            case 'car':
-                permitidos = caracteres;
-                break;
-            case 'num_car':
-                permitidos = numeros_caracteres;
-                break;
-        }
-
-        // Obtener la tecla pulsada
-        var evento = elEvento || window.event;
-        var codigoCaracter = evento.charCode || evento.keyCode;
-        var caracter = String.fromCharCode(codigoCaracter);
-
-        // Comprobar si la tecla pulsada es alguna de las teclas especiales
-        // (teclas de borrado y flechas horizontales)
-        var tecla_especial = false;
-        for (var i in teclas_especiales) {
-            if (codigoCaracter == teclas_especiales[i]) {
-                tecla_especial = true;
-                break;
-            }
-        }
-        // Comprobar si la tecla pulsada se encuentra en los caracteres permitidos
-        // o si es una tecla especial
-        return permitidos.indexOf(caracter) != -1 || tecla_especial;
-    }
-</script>

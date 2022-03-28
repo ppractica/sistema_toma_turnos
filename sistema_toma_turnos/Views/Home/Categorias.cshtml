@@ -12,42 +12,91 @@
                 <div class="text-center font-weight-bolder">
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size: x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
                     <br />
-                    
-                    <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione una categoria:</h5>
-                    <br />
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>CAJA</button>
+                    <form method="post">
+                        <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione una categoria:</h5>
+                        <br />
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>CAJA</button>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>NEGOCIOS</button>
+                        <br />
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>NEGOCIOS</button>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" active>VIVIENDA</button>
+                        <br />
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" active>VIVIENDA</button>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>SEGURO</button>
+                        <br />
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>SEGURO</button>
+                            </div>
                         </div>
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <div class="row justify-content-md-center">
-                        <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
-                        <a href="" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button">ACEPTAR</a>
-                    </div>
+                        <br />
+                        <br />
+                        <br />
+                        <div class="row justify-content-md-center">
+                            <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Index">CANCELAR</button>
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" data-toggle="modal" data-target="#myModal">ACEPTAR</button>
+                        </div>
+                    </form>
                     <blockquote class="blockquote mb-0">
                         <img id="image" src="/imagenes/logo.png" alt="Picture" class="float-left" width="100" height="100">
                     </blockquote>
+                </div>
+            </div>
+            <!--MODAL-->
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h6 class="text-center font-weight-bold text-body">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h6>
+                            <br />
+                            <div class="row justify-content-center">
+                                <!--<h4 class="font-weight-bold">Bienvenido</h4>-->
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <label class="font-weight-bold text-body font-16" for="bienvenido">BIENVENIDO </label>
+                                        <label class="font-weight-bold text-body font-16" for="nom_cliente">JUAN GARCIA</label>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <br />
+                            <div class="row justify-content-center">
+                                <label class="font-weight-bold text-body font-16" for="ticket">NUM. DE TICKET</label>
+                            </div>
+                            <div class="row justify-content-center">
+                                <label class="font-30 font-weight-bold text-body" for="num_ticket">CA002</label>
+                            </div>
+                            <br />
+                            <div class="row justify-content-center">
+                                <label class="font-weight-bold text-body font-16" for="filial">OFICINA PRINCIPAL</label>
+                            </div>
+                            <br />
+                            <div class="row justify-content-center">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <label class="text-body font-weight-bold" for="fe">FECHA: </label>
+                                        <label class="font-weight-bold text-body font-16" for="fecha">03/03/2022</label>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <label class="text-body font-weight-bold" for="ho">HORA: </label>
+                                        <label class="font-weight-bold text-body font-16" for="hora">09:32</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
