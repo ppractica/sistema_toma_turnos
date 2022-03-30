@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 
+
 //@* VALIDACION PARA EL INPUT DE IDENTIDAD *@
 function permite(elEvento, permitidos) {
     // Variables que definen los caracteres permitidos
@@ -45,10 +46,9 @@ function permite(elEvento, permitidos) {
 
 /*FUNCION BOTONES*/
 
-    $("#evaluate button").click(function () {
-        var resultado = document.getElementById('identidad');
+$("#evaluate button").click(function () {
 
-        resultado= alert($(this).val());
-        document.getElementById
+    document.getElementById('identidad').value += ($(this).val());
+  
+})
 
-    })

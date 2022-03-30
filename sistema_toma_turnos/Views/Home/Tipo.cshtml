@@ -1,9 +1,10 @@
-﻿
-@{
-    ViewData["Title"] = "Categorias";
+﻿@{
+    ViewData["Title"] = "Inicio2";
 
-    DateTime fecha = DateTime.Now;
+
 }
+
+
 
 
 <div class=" row justify-content-center">
@@ -16,29 +17,29 @@
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size: x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
                     <br />
                     <form method="post">
-                        <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione una categoria:</h5>
+                        <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione el tipo de ticket:</h5>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>CAJA</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>TERCERA EDAD</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>NEGOCIOS</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>EMBARAZADA</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" active>VIVIENDA</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" active>DISCAPACIDAD</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>SEGURO</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>NORMAL</button>
                             </div>
                         </div>
                         <br />
@@ -46,8 +47,8 @@
                         <br />
                         <div class="row justify-content-md-center">
                             <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
-                            <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Tipo">CANCELAR</button>
-                            <button class="btn btn-lg font-weight-bold" id="btnModal" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" data-toggle="modal" href="#myModal">ACEPTAR</button>
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Index">CANCELAR</button>
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Categorias">ACEPTAR</button>
                         </div>
                     </form>
                     <blockquote class="blockquote mb-0">
@@ -59,19 +60,3 @@
         </div>
     </div>
 </div>
-
-<!--MODAL-->
-<!-- The Modal -->
-<div class="modal" id="myModal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                cargando..
-            </div>
-        </div>
-    </div>
-</div>
-
-@section scripts{
-    <script src="~/js/modal/modal.js"></script>
-}

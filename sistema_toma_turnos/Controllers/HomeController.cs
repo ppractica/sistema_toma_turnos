@@ -23,9 +23,9 @@ namespace sistema_toma_turnos.Controllers
             return View("Inicio");
         }
 
-        public IActionResult Privacy()
+        public IActionResult Tipo()
         {
-            return View("Inicio2");
+            return View("Tipo");
 
         }
         public IActionResult Categorias()
