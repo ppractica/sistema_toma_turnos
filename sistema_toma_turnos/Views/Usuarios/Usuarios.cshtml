@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Usuarios";
+
+}
+
+<div class="card text-center border-warning">
+    <div class="card-body">
+        <h5 class="font-weight-bolder" style="color: #F98B06">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
+        <br />
+        <br />
+        <div class="col-md-8">
+            <table id="clientes" class="table table table-bordered table-striped">
+                <thead class="text-center text-dark thead-body">
+                    <tr class="" style="color: #0F0E0E; background-color: #FDB661">
+                        <th scope="col">ID</th>
+                        <th scope="col">TICKET</th>
+                        <th scope="col">CLIENTE</th>
+                        <th scope="col">TIPO DE TICKET</th>
+                        <th scope="col">ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CA001</td>
+                        <td>JUAN PEREZ</td>
+                        <td>TERCERA EDAD</td>
+                        <td>PENDIENTE</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CA001</td>
+                        <td>JUAN PEREZ</td>
+                        <td>TERCERA EDAD</td>
+                        <td>PENDIENTE</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>CA001</td>
+                        <td>JUAN PEREZ</td>
+                        <td>TERCERA EDAD</td>
+                        <td>PENDIENTE</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CA001</td>
+                        <td>JUAN PEREZ</td>
+                        <td>TERCERA EDAD</td>
+                        <td>PENDIENTE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button" asp-controller="Home" asp-action="Tipo">LLAMAR</button>
+        </div>
+    </div>
+</div>
+
+@*<script>
+    $(document).ready(function () {
+        $('#clientes').DataTable();
+    });
+</script>*@
