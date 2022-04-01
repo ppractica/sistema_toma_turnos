@@ -49,6 +49,18 @@ function permite(elEvento, permitidos) {
 $("#evaluate button").click(function () {
 
     document.getElementById('identidad').value += ($(this).val());
-  
+
+    borrar = document.getElementById("#borrar")
+
+        docuemnt.getElementById('#borrar')
+
 })
+
+
+
+
+
+
+
+
 
