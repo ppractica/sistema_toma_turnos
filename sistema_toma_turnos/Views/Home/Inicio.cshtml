@@ -10,10 +10,10 @@
             <div class="card-body">
                 <div class="text-center font-weight-bolder">
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size:x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
-                    <br />
-                    @*<h5 class="font-weight-bolder" style=" font-size: x-large "> Ingrese su número de identidad:</h5>*@
+                    <br />      
                     <label for="identidad" class="col-form-label font-weight-bolder" style=" font-size: x-large">Ingrese su número de identidad:</label>
                     <form asp-controller="Home" asp-action="Index">
+                        <label type="text" name="id_ticket" disabled></label> @*GENERA EL ID DEL TICKET*@
                         <div class="row justify-content-center">
 
                             <div class="col-6 ">
