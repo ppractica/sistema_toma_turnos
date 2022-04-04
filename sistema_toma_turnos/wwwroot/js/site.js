@@ -46,19 +46,37 @@ function permite(elEvento, permitidos) {
 
 /*FUNCION BOTONES*/
 
+
 $("#evaluate button").click(function () {
+
 
     document.getElementById('identidad').value += ($(this).val());
 
-    borrar = document.getElementById("#borrar")
-
-        docuemnt.getElementById('#borrar')
-
 })
 
+//function maximo() {
+//    valor = document.getElementById("identidad").value;
 
+//    if (!(/^\d{9}$/.test(valor))) {
+//        return false;
+//    }
+//}
 
+//$(document).ready(function () {
+//    $("#identidad").on("keyup", function () {
+//        var value = $(this).val().toLowerCase();
 
+//        $("#borrar button").click(function () {
+//            document.getElementById("identidad").value = "";
+//        });
+//    });
+//});
+
+//$("#borrrar button").click(function () {
+
+//    document.getElementById("identidad").value = "";
+
+//})
 
 
 

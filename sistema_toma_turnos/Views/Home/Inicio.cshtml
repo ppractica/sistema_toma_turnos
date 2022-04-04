@@ -11,12 +11,15 @@
                 <div class="text-center font-weight-bolder">
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size:x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
                     <br />
-                   
-                    <h5 class="font-weight-bolder" style=" font-size: x-large "> Ingrese su número de identidad:</h5>
-                    <form method="post">
+                    @*<h5 class="font-weight-bolder" style=" font-size: x-large "> Ingrese su número de identidad:</h5>*@
+                    <label for="identidad" class="col-form-label font-weight-bolder" style=" font-size: x-large">Ingrese su número de identidad:</label>
+                    <form asp-controller="Home" asp-action="Index">
                         <div class="row justify-content-center">
+
                             <div class="col-6 ">
-                                <input type="text" class="form-control text-center" id="identidad" min="13" maxlength="13" onkeypress="return permite(event, 'num')">
+
+                                <input type="text" class="form-control text-center" id="identidad" name="identidad" min="13" maxlength="13" onkeypress="return permite(event, 'num')">
+                                <span class="text-danger"></span>
                             </div>
                         </div>
                         <br />
@@ -38,12 +41,12 @@
                             </div>
                             <div class="row justify-content-center">
                                 <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff; margin: 4px; font-size: 30px" value="0">0</button>
-                                <button type="button" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 20px" onclick="removeCharacterFromString()" id="borrar"> BORRAR</button>
+                                <button type="reset" class="btn btn-lg" style="background-color: #FDA944; border-bottom-color: #ffffff;margin: 4px; font-size: 20px" id="borrar"> BORRAR</button>
                             </div>
                         </div>
                         <br />
                         <br />
-                      
+
                         <div class="row justify-content-md-center">
                             <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
                             @*<a href="" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button">ACEPTAR</a>*@
@@ -58,12 +61,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    const removeCharacterFromString = () => {
-        originalWord = 'DelftStack';
-        newWord = originalWord.replace(/t/g, '');
 
-        document.querySelector('#identidad').textContent
-            = newWord;
-    }
-</script>
+@section scripts{ 
+  <partial name="_ValidationScriptsPartial" />
+}

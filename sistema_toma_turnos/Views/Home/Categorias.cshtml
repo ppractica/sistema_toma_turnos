@@ -16,17 +16,17 @@
                     <h5 class="font-weight-bolder" style="color: #F98B06; font-size: x-large ">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
                     <br />
                     <form method="post">
-                        <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione una categoria:</h5>
+                        <h5 class="font-weight-bolder" style=" font-size: x-large "> Seleccione una área:</h5>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>CAJA</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" value="1" active>CAJA</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>NEGOCIOS</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" value="2" active>NEGOCIOS</button>
                             </div>
                         </div>
                         <br />
@@ -38,7 +38,7 @@
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>SEGURO</button>
+                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" value="3" active>SEGURO</button>
                             </div>
                         </div>
                         <br />
@@ -47,8 +47,12 @@
                         <div class="row justify-content-md-center">
                             <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
                             <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Tipo">CANCELAR</button>
-                            <button class="btn btn-lg font-weight-bold" id="btnModal" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" data-toggle="modal" href="#myModal">ACEPTAR</button>
+                            @*<button class="btn btn-lg font-weight-bold" id="btnModal" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" data-toggle="modal" data-target="#myModal">ACEPTAR</button>*@
+                            <a data-toggle="modal" data-target="#myModal" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px">
+                                <span aria-hidden="true">ACEPTAR</span>
+                            </a>
                         </div>
+                  
                     </form>
                     <blockquote class="blockquote mb-0">
                         <img id="image" src="/imagenes/logo.png" alt="Picture" class="float-left" width="100" height="100">
@@ -66,12 +70,45 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
-                cargando..
+                <!-- Modal body -->
+                <h6 class="text-center font-weight-bold text-body" style="font-size: 15px">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h6>
+                <br />
+                <div class="row justify-content-center">
+                    <!--<h4 class="font-weight-bold">Bienvenido</h4>-->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <label class="font-weight-bold text-body" style="font-size: 20px" for="bienvenido">BIENVENIDO </label>
+                            <label class="font-weight-bold text-body" style="font-size: 20px" for="nom_cliente">JUAN GARCIA</label>
+                        </li>
+                    </ul>
+
+                </div>
+                <br />
+                <div class="row justify-content-center">
+                    <label class="font-weight-bold text-body font-16" style="font-size:20px" for="ticket">NUM. DE TICKET</label>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="font-30 font-weight-bold text-body" style="font-size: 30px" for="num_ticket">CA002</label>
+                </div>
+                <br />
+                <div class="row justify-content-center">
+                    <label class="font-weight-bold text-body font-16" style="font-size: 20px" for="filial">OFICINA PRINCIPAL</label>
+                </div>
+                <br />
+                <div class="row justify-content-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <label class="text-body font-weight-bold" style="font-size: 20px" for="fe">FECHA: </label>
+                            <label class="font-weight-bold text-body" style="font-size: 20px" for="fecha">@fecha.ToString("dd/MM/yy")</label>
+                        </li>
+                        <li class="list-inline-item">
+                            <label class="text-body font-weight-bold" style="font-size: 20px" for="ho">HORA: </label>
+                            <label class="font-weight-bold text-body font-16" style="font-size: 20px" for="hora">@fecha.ToString("HH:mm:ss tt")</label>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-@section scripts{
-    <script src="~/js/modal/modal.js"></script>
-}

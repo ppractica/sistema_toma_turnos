@@ -5,8 +5,6 @@
 }
 
 
-
-
 <div class=" row justify-content-center">
     <div class="col-md-8">
         <br />
@@ -21,25 +19,25 @@
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" active>TERCERA EDAD</button>
+                                <button role="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="caja" asp-controller="Home" asp-action="Categorias" active>TERCERA EDAD</button>                              
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" active>EMBARAZADA</button>
+                                <button role="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="negocios" asp-controller="Home" asp-action="Categorias" active>EMBARAZADA</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" active>DISCAPACIDAD</button>
+                                <button role="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="vivienda" asp-controller="Home" asp-action="Categorias" active>DISCAPACIDAD</button>
                             </div>
                         </div>
                         <br />
                         <div class="row justify-content-center">
                             <div class="col-4">
-                                <button type="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" active>NORMAL</button>
+                                <button role="button" class="btn btn-outline-secondary btn-block font-weight-bold text-body" style="font-size: 20px" id="seguro" asp-controller="Home" asp-action="Categorias" active>NORMAL</button>
                             </div>
                         </div>
                         <br />
@@ -47,8 +45,8 @@
                         <br />
                         <div class="row justify-content-md-center">
                             <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
-                            <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Index">CANCELAR</button>
-                            <button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Categorias">ACEPTAR</button>
+                            <button class="btn btn-lg font-weight-bold" style="background-color: #EAECEE; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-action="Index" asp-controller="Home">CANCELAR</button>
+                            @*<button class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px" role="button" asp-controller="Home" asp-action="Categorias">ACEPTAR</button>*@
                         </div>
                     </form>
                     <blockquote class="blockquote mb-0">

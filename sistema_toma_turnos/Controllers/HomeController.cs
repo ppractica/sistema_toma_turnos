@@ -23,6 +23,14 @@ namespace sistema_toma_turnos.Controllers
             return View("Inicio");
         }
 
+        //ENVIAR INFORMACION DE LA VISTA AL CONTROLADOR 
+        //[HttpPost]
+        //public IActionResult Index(ticket ticket)
+        //{
+        //    //SI ES EXITOSO EL HTTPPOST ME RETORNA A LA VISTA DE TIPO DE TICKET
+        //    return RedirectToAction("Tipo");
+        //}
+
         public IActionResult Tipo()
         {
             return View("Tipo");
@@ -30,6 +38,7 @@ namespace sistema_toma_turnos.Controllers
         }
         public IActionResult Categorias()
         {
+
             return View("Categorias");
         }
 
