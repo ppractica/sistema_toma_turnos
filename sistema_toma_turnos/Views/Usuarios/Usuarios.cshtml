@@ -5,17 +5,25 @@
 
 <br />
 <br />
-<div class="card text-center border-warning">
+<div class="card border-warning">
     <div class="card-body">
-        <h5 class="font-weight-bolder" style="color: #F98B06">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h5>
+        <div class="row justify-content-center">
+            <h4 class="font-weight-bolder" style="color: #F98B06">COOPERATIVA DE AHORRO Y CREDITO EDUCADORES DE HONDURAS LIMITADA COACEHL</h4>
+        </div>
+        @*<div class="float-right">
+                <a data-toggle="modal" data-target="#modalTicket" class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 10px">
+                    <span aria-hidden="true">LLAMAR</span>
+                </a>
+            </div>*@
+        <br />
+        <br />
         <br />
         <br />
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <table id="clientes" class="table table table-bordered table-striped">
                     <thead class="text-center text-dark thead-body">
                         <tr class="" style="color: #0F0E0E; background-color: #FDB661">
-                            <th scope="col"></th>
                             <th scope="col">N.</th>
                             <th scope="col">CLIENTE</th>
                             <th scope="col">TICKET</th>
@@ -25,12 +33,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1"></label>
-                                </div>
-                            </td>
                             <td class="font-weight-bolder">1</td>
                             <td>JUAN PEREZ</td>
                             <td class="font-weight-bolder">CA001</td>
@@ -38,12 +40,6 @@
                             <td class="font-weight-bolder">PENDIENTE</td>
                         </tr>
                         <tr>
-                            <td>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                    <label class="custom-control-label" for="customCheck2"></label>
-                                </div>
-                            </td>
                             <td class="font-weight-bolder">2</td>
                             <td>ANA GARCIA</td>
                             <td class="font-weight-bolder">CA002</td>
@@ -53,12 +49,6 @@
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                    <label class="custom-control-label" for="customCheck3"></label>
-                                </div>
-                            </td>
                             <td class="font-weight-bolder">3</td>
                             <td>ANTONIO LAGOS</td>
                             <td class="font-weight-bolder">CA003</td>
@@ -66,12 +56,6 @@
                             <td class="font-weight-bolder">PENDIENTE</td>
                         </tr>
                         <tr>
-                            <td>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                    <label class="custom-control-label" for="customCheck4"></label>
-                                </div>
-                            </td>
                             <td class="font-weight-bolder">4</td>
                             <td>LETICIA RIVAS</td>
                             <td class="font-weight-bolder">CA004</td>
@@ -82,32 +66,127 @@
                     </tbody>
                 </table>
             </div>
+
+            <!--BOTONES PARA LA TABLA-->
             <div class="">
                 <br />
-                <button class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">LLAMAR</button>
                 <br />
-                <button class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">CERRAR</button>
                 <br />
-                @*<button class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">REDIRIGIR</button>*@
-                <div class="btn-group">
-                    <button class="btn btn-md font-weight-bold btn-block dropdown-toggle" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button" data-toggle="dropdown">
-                        REDIRIGIR
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item font-weight-bold" href="#">NEGOCIO</a>
-                        <a class="dropdown-item font-weight-bold" href="#">VIVIENDA</a>
-                        <a class="dropdown-item font-weight-bold" href="#">SEGURO</a>
-                    </div>
-                </div>
                 <br />
+                <br />
+                <a data-toggle="modal" data-target="#modalTicket" class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px">
+                    <span aria-hidden="true">LLAMAR</span>
+                </a>
+                <br />
+                @*<button class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">CERRAR</button>
+                    <br />
+                    <button class="btn btn-md font-weight-bold btn-block" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">REDIRIGIR</button>
+                    <div class="btn-group">
+                            <button class="btn btn-md font-weight-bold btn-block dropdown-toggle" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button" data-toggle="dropdown">
+                                REDIRIGIR
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold" href="#">NEGOCIO</a>
+                                <a class="dropdown-item font-weight-bold" href="#">VIVIENDA</a>
+                                <a class="dropdown-item font-weight-bold" href="#">SEGURO</a>
+                            </div>
+                        </div>
+                        <br />
 
+                    </div>*@
             </div>
+            <br />
+            <br />
         </div>
+        <br />
+        <br />
+        <br />
         <img id="image" src="/imagenes/logo.png" alt="Picture" class="float-left" width="100" height="100">
     </div>
+    @*<script>
+            $(document).ready(function () {
+                $('#clientes').DataTable();
+            });
+        </script>*@
+
+
 </div>
-<script>
-    $(document).ready(function () {
-        $('#clientes').DataTable();
-    });
-</script>
+
+<!--MODAL-->
+<!-- The Modal -->
+<div class="modal" id="modalTicket">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="row justify-content-center">
+                <div class="modal-header">
+                    <h6 class="modal-title" style="font-size: 25px">DATOS TICKET</h6>
+                </div>
+            </div>
+            <div class="modal-body">
+                <!-- Modal body -->
+                <br />
+                <form>
+                    <!-- NUMERO DE CLIENTE -->
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-md-5 col-form-label" style="font-size: 20px" for="num_ticket">Número de ticket:</label>
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" class="form-control" id="num_ticket" name="num_ticket" readonly>
+                        </div>
+                    </div>
+                    <!-- NOMBRE CLIENTE -->
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-md-5 col-form-label" style="font-size: 20px" for="nom_cliente">Nombre Cliente:</label>
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" class="form-control" id="nom_cliente" name="nom_cliente" readonly>
+                        </div>
+                    </div>
+                    <!--NUMERO IDENTIDAD -->
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-md-5 col-form-label" style="font-size: 20px" for="num_ident">Núm. de Identidad:</label>
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" class="form-control" id="num_ident" name="num_ident" readonly>
+                        </div>
+                    </div>
+                    <!-- TIPO ATENCION-->
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-md-5 col-form-label" style="font-size: 20px" for="atencion">Atención:</label>
+                        <div class="col-sm-12 col-md-6">
+                            <select class="form-control">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- ESTADO-->
+                    <div class="form-group row">
+                        <label class="col-sm-6 col-md-5 col-form-label" style="font-size: 20px" for="estado">Estado:</label>
+                        <div class="col-sm-12 col-md-6">
+                            <select class="form-control">
+                                <option></option>
+                                <option>PENDIENTE</option>
+                                <option>LLAMADO</option>
+                                <option>CERRADO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <!--BOTON REDIRIGIR Y ACEPTAR-->
+                    <div style="float: right">
+                        <div class="btn-group">
+                            <button class="btn btn-md font-weight-bold  btn-block" style="background-color: #F7C070; border-bottom-color: #ffffff; font-size: 20px; margin: 4px; " role="button" data-toggle="dropdown">
+                                REDIRIGIR
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item font-weight-bold" href="#">NEGOCIO</a>
+                                <a class="dropdown-item font-weight-bold" href="#">VIVIENDA</a>
+                                <a class="dropdown-item font-weight-bold" href="#">SEGURO</a>
+                            </div>
+                        </div>
+                        <!--BOTON ACEPTAR-->
+                        <button type="submit" class="btn btn-md font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px; margin: 4px;" role="button">ACEPTAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

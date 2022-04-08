@@ -13,12 +13,12 @@
                     <br />      
                     <label for="identidad" class="col-form-label font-weight-bolder" style=" font-size: x-large">Ingrese su número de identidad:</label>
                     <form asp-controller="Home" asp-action="Index">
-                        <label type="text" name="id_ticket" disabled></label> @*GENERA EL ID DEL TICKET*@
+                 
                         <div class="row justify-content-center">
 
                             <div class="col-6 ">
 
-                                <input type="text" class="form-control text-center" id="identidad" name="identidad" min="13" maxlength="13" onkeypress="return permite(event, 'num')">
+                                <input type="text" class="form-control text-center" id="identidad" name="identidad" min="13" maxlength="13" onkeypress="return permite(event, 'num')" onsubmit="mayor()">
                                 <span class="text-danger"></span>
                             </div>
                         </div>
@@ -46,7 +46,6 @@
                         </div>
                         <br />
                         <br />
-
                         <div class="row justify-content-md-center">
                             <!--<button type="button" class="btn btn-primary">ACEPTAR</button-->
                             @*<a href="" class="btn btn-lg font-weight-bold" style="background-color: #FDA944; border-bottom-color: #ffffff; font-size: 20px" role="button">ACEPTAR</a>*@

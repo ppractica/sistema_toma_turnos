@@ -10,7 +10,7 @@ namespace sistema_toma_turnos.Controllers
     {
         public IActionResult Usuarios()
         {
-            return View("Usuarios");
+            return View();
         }
     }
 }

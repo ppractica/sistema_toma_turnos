@@ -8,9 +8,9 @@ namespace sistema_toma_turnos.Controllers
 {
     public class VistaController : Controller
     {
-        public IActionResult Visual()
+        public IActionResult Vista()
         {
-            return View("Vista");
+            return View();
         }
     }
 }

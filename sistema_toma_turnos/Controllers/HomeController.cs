@@ -33,13 +33,13 @@ namespace sistema_toma_turnos.Controllers
 
         public IActionResult Tipo()
         {
-            return View("Tipo");
+            return View();
 
         }
         public IActionResult Categorias()
         {
 
-            return View("Categorias");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
