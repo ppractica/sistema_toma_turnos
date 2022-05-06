@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace sistema_toma_turnos
 {
     public class Startup
@@ -23,7 +24,20 @@ namespace sistema_toma_turnos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
+          
             services.AddControllersWithViews();
+
+           var cadenaConexion = services.AddDbContext<AplicationDbContext>(options =>
+                  options.UseOracleSQLCompatibility(Configuration.GetConnectionString("conexion")));
+
+            var cadenaConexion = services.Configuration.GetConnectionString("conexion");
+
+            var cadenaConexion = builder.Configuration.GetConnectionString("connCOAPRE");
+            builder.Services.AddDbContext<ModelContext>(x => x.UseOracle(cadenaConexion, options =>
+                                                                         options.UseOracleSQLCompatibility("11"))
+                                                       );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
