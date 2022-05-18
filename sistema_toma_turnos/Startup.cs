@@ -8,6 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using sistema_toma_turnos.Data; //LIBRERIA PARA LLAMAR LOS METODOS DE LA CARPETA DATA
+using Microsoft.EntityFrameworkCore;
+
+
 
 
 namespace sistema_toma_turnos
@@ -20,23 +24,20 @@ namespace sistema_toma_turnos
         }
 
         public IConfiguration Configuration { get; }
-
+      
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
-          
+                 
+            //services.AddDbContext<AplicationDbContext>(options =>
+            //options.U(Configuration.GetConnectionString("conexion")));
+
             services.AddControllersWithViews();
 
-           var cadenaConexion = services.AddDbContext<AplicationDbContext>(options =>
-                  options.UseOracleSQLCompatibility(Configuration.GetConnectionString("conexion")));
-
-            var cadenaConexion = services.Configuration.GetConnectionString("conexion");
-
-            var cadenaConexion = builder.Configuration.GetConnectionString("connCOAPRE");
-            builder.Services.AddDbContext<ModelContext>(x => x.UseOracle(cadenaConexion, options =>
-                                                                         options.UseOracleSQLCompatibility("11"))
-                                                       );
+            //var cadenaConexion = builder.Configuration.GetConnectionString("connCOAPRE");
+            //builder.Services.AddDbContext<ModelContext>(x => x.UseOracle(cadenaConexion, options =>
+            //                                                             options.UseOracleSQLCompatibility("11"))
+            //  );        
 
         }
 

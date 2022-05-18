@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using sistema_toma_turnos.Models; //LIBRERIA PARA HACER REFERENCIA A LAS CLASES DEL MODELS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,10 @@ namespace sistema_toma_turnos.Data
         : base(options)
         {
         } 
+
+        public DbSet<Clientes> Clientes { get; set; }
+    
+  
+    
     }
 }
